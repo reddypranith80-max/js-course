@@ -69,24 +69,43 @@
 
 //type conversion and coersion
 
-let a = "Pranith";
-console.log(Number(a)); //return Nan
+//type conversion --> is the process of hard coding the value to Number(x) or String(x)
 
-// console.log(typeof NaN); // returns number
+//type coersion --> is the process where + is added as operation the value become string if - is added then it becomes number
 
-let b = 11;
-console.log(typeof b);
+// let a = "Pranith";
+// console.log(Number(a)); //return Nan
 
-console.log(String(b), b);
-console.log(typeof b); //return number even when converted only the scope is in the console.log in prev command not in the whole val;
+// // console.log(typeof NaN); // returns number
 
-const val = "11" + 1;
+// let b = 11;
+// console.log(typeof b);
 
-const ans = val - 1;
+// console.log(String(b), b);
+// console.log(typeof b); //return number even when converted only the scope is in the console.log in prev command not in the whole val;
 
-console.log(val, ans);
-console.log(typeof val, typeof ans);
+// const val = "11" + 1;
 
-// until - we get the number as the type if we use (+) we get it as format of string
+// const ans = val - 1;
 
-console.log("11" - "4" - "3" - 3 + "5");
+// console.log(val, ans);
+// console.log(typeof val, typeof ans);
+
+// // until - we get the number as the type if we use (+) we get it as format of string
+
+// console.log("11" - "4" - "3" - 3 + "5");
+
+//truthy and falsy values
+
+// the falsy values are :    undefined , NaN , 0 , '' , null
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+console.log(Boolean(null));
+console.log(Boolean(""));
+
+//now check for anything other than that it becomes true
+
+console.log(Boolean("Pranith"));
+console.log(Boolean(3));
