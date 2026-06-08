@@ -99,13 +99,51 @@
 
 // the falsy values are :    undefined , NaN , 0 , '' , null
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(NaN));
-console.log(Boolean(null));
-console.log(Boolean(""));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(NaN));
+// console.log(Boolean(null));
+// console.log(Boolean(""));
 
-//now check for anything other than that it becomes true
+// //now check for anything other than that it becomes true
 
-console.log(Boolean("Pranith"));
-console.log(Boolean(3));
+// console.log(Boolean("Pranith"));
+// console.log(Boolean(3));
+
+//comapring between == and ===
+
+const age = 18;
+if (age === 18) {
+  console.log(
+    " strict equality operator both are numbers and check for the type if same only then true",
+  );
+} else {
+  console.log(
+    " either the number is not equal or the value might not be number",
+  );
+}
+
+const myAge = 18;
+if (myAge == 18) {
+  console.log(
+    " loose equality operator both are numbers only check the value not the type",
+  );
+} else {
+  console.log(" only the number is not equal then false");
+}
+
+const gage = 19;
+if (gage === 18) {
+  console.log(" strict equality operator both are numbers and same type");
+} else {
+  console.log(
+    " either the number is not equal or the value might not be number",
+  );
+}
+
+const sage = 19;
+if (sage == 18) {
+  console.log(" loose equality operator both are numbers");
+} else {
+  console.log(" only the number is not equal ");
+}
