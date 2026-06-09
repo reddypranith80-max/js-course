@@ -112,38 +112,51 @@
 
 //comapring between == and ===
 
-const age = 18;
-if (age === 18) {
-  console.log(
-    " strict equality operator both are numbers and check for the type if same only then true",
-  );
-} else {
-  console.log(
-    " either the number is not equal or the value might not be number",
-  );
-}
+// const age = 18;
+// if (age === 18) {
+//   console.log(
+//     " strict equality operator both are numbers and check for the type if same only then true",
+//   );
+// } else {
+//   console.log(
+//     " either the number is not equal or the value might not be number",
+//   );
+// }
 
-const myAge = 18;
-if (myAge == 18) {
-  console.log(
-    " loose equality operator both are numbers only check the value not the type",
-  );
-} else {
-  console.log(" only the number is not equal then false");
-}
+// const myAge = 18;
+// if (myAge == 18) {
+//   console.log(
+//     " loose equality operator both are numbers only check the value not the type",
+//   );
+// } else {
+//   console.log(" only the number is not equal then false");
+// }
 
-const gage = 19;
-if (gage === 18) {
-  console.log(" strict equality operator both are numbers and same type");
-} else {
-  console.log(
-    " either the number is not equal or the value might not be number",
-  );
-}
+// const gage = 19;
+// if (gage === 18) {
+//   console.log(" strict equality operator both are numbers and same type");
+// } else {
+//   console.log(
+//     " either the number is not equal or the value might not be number",
+//   );
+// }
 
-const sage = 19;
-if (sage == 18) {
-  console.log(" loose equality operator both are numbers");
+// const sage = 19;
+// if (sage == 18) {
+//   console.log(" loose equality operator both are numbers");
+// } else {
+//   console.log(" only the number is not equal ");
+// }
+
+const hasDriverLicense = false;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(!hasDriverLicense);
+console.log(hasDriverLicense || hasGoodVision);
+
+if (hasDriverLicense && hasGoodVision) {
+  console.log("I should drive");
 } else {
-  console.log(" only the number is not equal ");
+  console.log("someone should drive");
 }
