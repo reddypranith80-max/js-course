@@ -148,15 +148,46 @@
 //   console.log(" only the number is not equal ");
 // }
 
-const hasDriverLicense = false;
-const hasGoodVision = true;
+// const hasDriverLicense = false;
+// const hasGoodVision = true;
 
-console.log(hasDriverLicense && hasGoodVision);
-console.log(!hasDriverLicense);
-console.log(hasDriverLicense || hasGoodVision);
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(!hasDriverLicense);
+// console.log(hasDriverLicense || hasGoodVision);
 
-if (hasDriverLicense && hasGoodVision) {
-  console.log("I should drive");
-} else {
-  console.log("someone should drive");
+// if (hasDriverLicense && hasGoodVision) {
+//   console.log("I should drive");
+// } else {
+//   console.log("someone should drive");
+// // }
+// if(day === 'monday'){
+//     console.log("today is monday");
+// }
+
+const day = "friday";
+
+switch (day) {
+  case "monday": // day === 'monday'
+    console.log("today is monday");
+    break;
+  case "tuesday":
+    console.log("today is tuesday");
+    break;
+  case "wednesday":
+    console.log("today is wednesday");
+    break;
+  case "thursday":
+    console.log("today is thursday");
+    break;
+  case "friday":
+    console.log("today is friday");
+    break;
+  case "saturday":
+    console.log("today is saturday");
+    break;
+  case "sunday":
+    console.log("today is weekend");
+    break;
+  default:
+    console.log("Invalid day");
 }
